@@ -8,9 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "type-check": "vue-tsc --build",
-    "lint": "run-s lint:*",
-    "lint:oxlint": "oxlint . --fix",
-    "lint:eslint": "eslint . --fix --cache",
+    "lint": "eslint . --fix --cache",
     "format": "oxfmt src/"
   },
   "dependencies": {
@@ -27,8 +25,8 @@
     "@vue/tsconfig": "^0.9.1",
     "eslint": "^10.2.1",
     "eslint-config-prettier": "^10.1.8",
-    "oxfmt": "^0.4.6",
-    "oxlint": "^0.12.1",
+    "oxfmt": "^0.45.0",
+    "oxlint": "^1.60.0",
     "prettier": "^3.4.2",
     "typescript": "~5.7.2",
     "vite": "^6.3.5",
