@@ -15,6 +15,7 @@ export default defineConfig({
     outDir: '../dist/frontend',
     emptyOutDir: true,
     chunkSizeWarningLimit: 1000,
+    cssCodeSplit: false,
     rollupOptions: {
       output: {
         manualChunks: {
