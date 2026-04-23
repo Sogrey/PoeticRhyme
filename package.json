@@ -1,35 +1,24 @@
 {
   "name": "poetic-rhyme",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
+  "description": "专注儿童诗词启蒙的国学学习平台",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix --cache",
-    "format": "oxfmt src/"
-  },
-  "dependencies": {
-    "pinia": "^3.0.4",
-    "shuimo-ui": "0.3.0-alpha.14",
-    "vue": "^3.5.32",
-    "vue-router": "^5.0.4"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "type-check": "turbo run type-check",
+    "lint": "turbo run lint",
+    "data:update": "node scripts/update-data.js",
+    "data:fetch": "node scripts/fetch-data.js",
+    "data:preprocess": "node scripts/preprocess-data.js",
+    "build:db": "node scripts/build-db.js"
   },
   "devDependencies": {
-    "@tsconfig/node24": "^24.0.4",
-    "@types/node": "^24.12.2",
-    "@vitejs/plugin-vue": "^6.0.6",
-    "@vue/eslint-config-typescript": "^14.7.0",
-    "@vue/tsconfig": "^0.9.1",
-    "eslint": "^10.2.1",
-    "eslint-config-prettier": "^10.1.8",
-    "oxfmt": "^0.45.0",
-    "oxlint": "^1.60.0",
-    "prettier": "^3.4.2",
-    "typescript": "~5.7.2",
-    "vite": "^6.3.5",
-    "vue-tsc": "^2.2.10"
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@9.1.0+sha512.02c0747f895b9927478a4416c4f50f3b8ff6c3a3a62f7a1434833a5c17617a2e",
+  "dependencies": {
+    "better-sqlite3": "^12.9.0"
   }
 }

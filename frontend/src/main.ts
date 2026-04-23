@@ -1,0 +1,17 @@
+import './assets/main.css'
+
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+import { createMUI } from 'shuimo-ui'
+import 'shuimo-ui/dist/style.css'
+
+import App from './App.vue'
+import router from './router'
+
+const app = createApp(App)
+
+app.use(createPinia())
+app.use(router)
+app.use(createMUI())
+
+app.mount('#app')
